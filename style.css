@@ -1,0 +1,430 @@
+/*YLEISET*/
+
+
+div {
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+div.tausta{
+  background-image:url(taustakuva2.png);
+  background-position: center;
+  border-radius: 25px;
+
+}
+
+div.etusivu{
+  background-image:url(taustakuva2.png);
+  background-size: cover;
+  border-radius: 25px;
+  color: white;
+
+}
+
+div.valkoinenTausta{
+  background-color: rgba(255, 255, 255, 0.852);
+  border-radius: 25px;
+}
+
+div.navigaatio {
+  font-family:'Lucida Sans';
+  text-align: center;
+  font-size: 20px;
+}
+
+div.tayte{
+  padding-top: 80px;
+}
+div.pieniTayte{
+  padding-top: 30px;
+}
+
+a.takaisin{
+  font-family:'Lucida Sans';
+  color: black;
+  padding-left: 160px;
+}
+
+a {
+  text-align: center;
+  color:white;
+}
+
+h1 {
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Lucida Console';
+  font-size: xx-large;
+  font-weight: 100;
+  color: white;
+  font-size: 100px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Lucida Console';
+  font-size: xx-large;
+  font-weight: 100;
+  color:rgb(29, 29, 29);
+  font-size: 70;
+}
+
+p {
+  text-align: center;
+  font-family:'Lucida Sans';
+}
+
+p.vikaTeksti {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+p.teksti {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 30px;
+}
+
+p.tekstiPieni{
+  font-size: small;
+}
+
+
+/*KUVAT*/
+
+img.kuva {
+
+  padding-top: 50%;
+  max-height: 600px;
+  background-position: center;
+  background-size: cover;
+  float:right;
+}
+
+img.naamakuva{
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 25px;
+  max-width: 550px;
+  margin-top: 8%;
+  float: right;
+
+}
+
+
+img.kelloKuva{
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  float: right;
+  padding-right: 10%;
+}
+
+img.appiKuva{
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  float: right;
+}
+
+
+
+/*OTSIKKOASETTELUT*/
+
+
+div.otsikko {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-left: 20%;
+  padding-top: 30 px;
+
+}
+
+img.logoKello{
+  width: 100%;  
+  padding-top: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+img.logoKolmiot{
+  width: 140%;  
+  padding-top: 50px;
+}
+
+h2.otsikko{
+  font-family: 'Lucida Console';
+  font-weight: 100;
+  padding-top: 26%;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+/*ABOUTME*/
+
+div.riviaboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+div.oikeaAboutMe {
+  float: right;
+  padding-top: 5%;
+  padding-bottom: 50%;
+}
+
+p.AboutMe2 {
+  text-align: left;
+  display: flex;
+  font-weight:500;
+  align-items: center;
+  padding-right: 20%;
+}
+
+p.AboutMe {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding-right: 10%;
+}
+
+h2.aboutMe{
+  font-family: 'Lucida Console';
+  font-weight: 100;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+/*KOLUMNIASETTELUT*/
+
+div.rivi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 200px;
+}
+
+
+div.oikea {
+  float: right;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30%;
+}
+
+div.oikea1 {
+  float: right;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30%;
+}
+
+div.oikeaOtsikko {
+  float: right;
+  justify-content: center;
+  align-items: center;
+padding-left: 10%;
+}
+
+p.oikeaKolumni {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+h2.oikeaKolumni {
+  text-align: left;
+}
+
+/*INDEKSIT*/
+
+
+div.alaindeksi{
+  margin-top: 100px;
+  color: white;
+}
+
+
+
+/*MEDIAKYSELYT*/
+
+@media only screen and (max-width: 800px) {
+  div.rivi{
+    grid-template-columns: 1fr;
+    padding: 0%; 
+    justify-content: center;
+    text-align: center;
+  }
+
+  /*ABOUT ME*/
+
+  div.riviaboutme{
+    grid-template-columns: 1fr;
+    padding: 0%; 
+    justify-content: center;
+    text-align: center;
+  }
+
+ 
+div.oikeaAboutMe {
+  float: none;
+  padding: 0;
+}
+
+p.AboutMe2 {
+  text-align:center;
+  display: flex;
+  font-weight:500;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0;
+}
+
+p.AboutMe {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-right: 0%;
+}
+
+h2.aboutMe{
+  font-family: 'Lucida Console';
+  font-weight: 100;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+img.naamakuva{
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 25px;
+  max-width: 200px;
+  margin-top: 8%;
+  float: none;
+
+}
+
+/*MUUT*/
+
+a.takaisin{
+  padding-left: 30px;
+}
+
+  div.oikeaOtsikko {
+    float: right;
+    justify-content: center;
+    align-items: center;
+  padding-left: 0;
+  }
+
+  div.otsikko{
+    grid-template-columns: 1fr;
+    float: none;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  img.kuva{
+    min-width: 80%;
+    min-height: 400px;
+  }
+
+  img.appiKuva{
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    float: none;
+  }
+
+  img.kelloKuva{
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    float: none;
+
+  }
+
+
+
+  div.oikea{
+    width: 100%;
+    padding: 0;
+  }
+
+  p.oikeaKolumni{
+    text-align: center;
+    justify-content: center;
+    float:none;
+
+  }
+
+  h2.oikeaKolumni{
+    text-align: center;
+  }
+  h2.otsikko{
+    text-align: center;
+    padding: 0;
+  }
+
+  h1{
+    font-size:xx-large;
+  }
+  
+  img.logoKolmiot{
+    width: 70%;  
+    padding-top: 50px;
+  }
+
+  img.logoKello{
+    max-width: 50%;  
+    padding-top: 50px;
+  }
+  
+  div.oikea1 {
+    float: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  }
+
+  @media only screen and (min-width: 1025px) {
+    div.oikea{
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    p.teksti{
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    p.vikaTeksti{
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    }
