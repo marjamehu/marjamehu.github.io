@@ -9,14 +9,14 @@ div {
 
 
 div.tausta{
-  background-image:url(taustakuva2.png);
+  background-image:url(taustakuva.avif);
   background-position: center;
   border-radius: 25px;
 
 }
 
 div.etusivu{
-  background-image:url(taustakuva2.png);
+  background-image:url(taustakuva.avif);
   background-size: cover;
   border-radius: 25px;
   color: white;
